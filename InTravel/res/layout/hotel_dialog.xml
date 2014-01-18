@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Hotel Details for Andhra Pradesh -->
+
+    <RelativeLayout
+        android:id="@+id/ap_dlg_rel_hotel_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/hotel_dialog_background"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/ap_dlg_hotel_rel_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/ap_dlg_hotel_text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text=""
+                android:textColor="#234388"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ap_dlg_hotel_text_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ap_dlg_hotel_text_name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toLeftOf="@+id/rel_feb"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#2e2e2e"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rel_feb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ap_dlg_hotel_text_type"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/rel_sharing" >
+
+                <ImageView
+                    android:id="@+id/img_love"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/heart_deselect" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_sharing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/rel_feb"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" >
+
+                <ImageView
+                    android:id="@+id/img_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/share_button" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ap_dlg_hotel_img_underline"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ap_dlg_hotel_rel_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/underline" />
+
+        <RelativeLayout
+            android:id="@+id/ap_dlg_rel_hotel_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ap_dlg_hotel_img_underline"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/ap_dlg_hotel_img_address_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/dialog_address_logo" />
+
+            <TextView
+                android:id="@+id/ap_dlg_hotel_text_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/ap_dlg_hotel_img_address_logo"
+                android:text=""
+                android:textColor="#2e2e2e"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ap_dlg_rel_hotel_call"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ap_dlg_rel_hotel_address"
+            android:layout_marginTop="10dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/ap_dlg_hotel_img_call_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/dialog_call_logo" />
+
+                    <TextView
+                        android:id="@+id/ap_dlg_hotel_text_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@+id/ap_dlg_hotel_img_call_logo"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="#2e2e2e"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/ap_dlg_hotel_img_fax_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/ap_dlg_hotel_text_phone"
+                        android:background="@drawable/dialog_fax_logo" />
+
+                    <TextView
+                        android:id="@+id/ap_dlg_hotel_text_fax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@+id/ap_dlg_hotel_img_fax_logo"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="#2e2e2e"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ap_dlg_hotel_rel_mail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ap_dlg_rel_hotel_call"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/ap_dlg_hotel_img_mail_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/dialog_message_logo" />
+
+            <TextView
+                android:id="@+id/ap_dlg_hotel_text_emailid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/ap_dlg_hotel_img_mail_logo"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#2e2e2e"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ap_dlg_hotel_rel_website"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ap_dlg_hotel_rel_mail"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/ap_dlg_hotel_img_website_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/dialog_website_logo" />
+
+            <TextView
+                android:id="@+id/ap_dlg_hotel_text_website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/ap_dlg_hotel_img_website_logo"
+                android:text=""
+                android:textColor="#2e2e2e"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ap_dlg_hotel_rel_home"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ap_dlg_hotel_rel_website"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/ap_dlg_hotel_img_home_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/dialog_home_logo" />
+
+            <TextView
+                android:id="@+id/ap_dlg_hotel_text_rooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/ap_dlg_hotel_img_home_logo"
+                android:text=""
+                android:textColor="#2e2e2e"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/ap_dlg_hotel_rel_home" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
